@@ -15,38 +15,44 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 /*practica transformaciones*/
 header:hover {
-   transform: scale(1.1);
+    transform: scale(1.1);
     transition: all 2s;
 }
 
 /*practica animaciones*/
-.manos:hover{
+.manos:hover {
     animation: manos 4s;
 }
 
 
-@keyframes manos{
-    0%{
+@keyframes manos {
+    0% {
         transform: none
     }
-    25%{ transform: scale(0.5);
+
+    25% {
+        transform: scale(0.5);
 
     }
-    50%{ transform: scale(0.5);
+
+    50% {
+        transform: scale(0.5);
 
     }
-75%{
-    transform: scale(1);
-}
+
+    75% {
+        transform: scale(1);
+    }
 }
 
 nav {
     text-decoration: none;
     font-size: 25px;
     display: flex;
-    
+
 }
 
 a {
