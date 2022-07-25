@@ -39,13 +39,11 @@ header:hover {
     }
 
     50% {
-        transform: scale(0.5);
+        transform: scale(0.8);
 
     }
 
-    75% {
-        transform: scale(1);
-    }
+   
 }
 
 nav {
