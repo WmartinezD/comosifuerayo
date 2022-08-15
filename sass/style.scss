@@ -1,0 +1,476 @@
+@import"fuentes";
+
+@import"generales";
+
+@import"footer";
+
+/*practica animaciones*/
+.manos:hover {
+    animation: manos 4s;
+}
+
+
+@keyframes manos {
+    0% {
+        transform: none
+    }
+
+    25% {
+        transform: scale(0.5);
+
+    }
+
+    50% {
+        transform: scale(0.8);
+
+    }
+
+
+}
+
+
+
+
+// h1 {
+//     font-style: normal;
+//     font-weight: bolder;
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 40px;
+//     text-align: center;
+//     padding: 20px;
+//     margin: 10px 20px 10px 20px;
+//     color: rgb(227, 232, 236);
+
+// }
+
+h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    border-top: 20px;
+    color: rgb(227, 232, 236);
+}
+
+.manos {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.6;
+    padding: 15px;
+    margin: 10px 20px 10px 20px;
+    color: rgb(183, 198, 211);
+}
+
+.parafo {
+    font-size: 20px;
+    color: rgb(183, 198, 211);
+}
+
+
+
+
+.section {
+    color: rgb(17, 165, 153);
+    border-top: 0px;
+    border-left: 20px;
+
+}
+
+.vos {
+    color: rgb(17, 165, 153);
+}
+
+
+
+
+
+
+
+header {
+    grid-area: header;
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+}
+
+@media screen and (max-width:768px) {
+    header {
+        display: block;
+    }
+}
+
+nav {
+    grid-area: nav;
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    color: #f1f5f7;
+
+}
+
+.manos {
+    grid-area: manos;
+}
+
+.experiencia {
+    grid-area: experiencia;
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+}
+
+.necesidad {
+    grid-area: necesidad;
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+}
+
+.aside {
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    grid-area: aside;
+    text-align: center;
+}
+
+footer {
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    grid-area: footer;
+
+}
+
+.grilla {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "experiencia"
+        "manos"
+        "necesidad"
+        "aside"
+        "footer";
+}
+
+
+
+
+
+
+.border {
+    border: 1px solid rgb(192, 189, 189)
+}
+
+.items {
+    display: flex;
+    height: 100%;
+    border-radius: 100%;
+
+}
+
+
+@media(min-width:600px) {
+    .grilla {
+        display: grid;
+        grid-template-areas:
+            "nav nav"
+            "header header"
+            "necesidad aside"
+            "necesidad aside"
+            "experiencia experiencia"
+            "footer footer";
+    }
+}
+
+@media(min-width:800px) {
+
+    .grilla {
+        display: grid;
+        grid-template-areas:
+
+            "nav nav nav"
+            "header header header"
+            "necesidad necesidad necesidad"
+            "aside aside aside"
+            "experiencia experiencia experiencia"
+            "footer footer footer";
+    }
+}
+
+.mision {
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    text-align: center;
+
+    grid-area: mision;
+}
+
+.somos {
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    grid-area: somos;
+}
+
+.ayudar {
+    text-align: center;
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+
+    grid-area: ayudar;
+}
+
+.vos {
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    grid-area: vos;
+
+}
+
+.nosotros {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "mision"
+        "somos"
+        "ayudar"
+        "vos"
+        "footer";
+}
+
+@media(min-width:600px) {
+    .nosotros {
+        display: grid;
+
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "mision somos"
+            "ayudar ayudar"
+            "vos vos"
+            "footer footer";
+    }
+}
+
+
+@media(min-width:800px) {
+    .nosotros {
+
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "mision mision mision"
+            "ayudar ayudar ayudar"
+            "vos vos vos"
+            "footer footer footer";
+    }
+}
+
+
+
+.vos {
+    text-align: center;
+    border-color: aliceblue;
+    margin: 2px;
+}
+
+.sub {
+    text-align: center;
+    color: #0f2027;
+}
+
+article {
+    color: #f1f5f7;
+}
+
+.formulario p {
+    color: #f1f5f7;
+    text-align: center;
+}
+
+
+main {
+
+    text-align: center;
+    grid-area: main;
+    border-radius: 1%;
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+
+}
+
+.redes {
+    padding: 10px;
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    grid-area: redes;
+
+}
+
+.redes h2 {
+    color: #f1f5f7;
+
+}
+
+.arena p {
+    color: #0f2027;
+}
+
+.arena {
+    grid-area: arena;
+    background-color: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    text-align: left;
+}
+
+.contacto {
+    display: grid;
+    grid-template-areas:
+        "header "
+        "nav "
+        "main"
+        "redes"
+        "arena"
+        "footer ";
+
+
+    height: 100px;
+}
+
+
+
+.podes {
+    background-image: linear-gradient(#0f2027,
+            #203a43,
+            #2c5364);
+    ;
+    grid-area: podes;
+}
+
+
+.meta {
+    grid-area: meta;
+}
+
+.donaciones {
+    grid-area: donaciones;
+}
+
+.donation {
+    grid-area: donation;
+}
+
+.donar {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "podes"
+        "meta"
+        "donaciones"
+        "donation"
+        "footer";
+    gap: 5px;
+    height: 100vp;
+}
+
+@media(min-width:600px) {
+    .donar {
+        display: grid;
+
+        grid-template-areas:
+            "header header "
+            "nav nav "
+            "podes podes"
+            "meta meta "
+            "donaciones donaciones donaciones"
+            "donation donation donation"
+            "footer footer footer";
+
+        height: 100vh;
+    }
+}
+
+
+
+.section {
+    text-align: center;
+    grid-area: section;
+}
+
+.sub {
+    grid-area: sub;
+}
+
+.adicciones p {
+    color: #0f2027;
+}
+
+.depresion {
+    background-color: #203a43;
+
+}
+
+.calle {
+    color: #0f2027;
+}
+
+.salud {
+    background-color: #203a43;
+
+}
+
+.galeria {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "section"
+        "footer";
+    gap: 5px;
+    height: 100vp;
+}
+
+@media(min-width:600px) {
+    .galeria {
+        display: grid;
+
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "section section"
+            "footer footer";
+
+    }
+}
+
+
+
+@media(min-width:800px) {
+    .galeria {
+        display: grid;
+
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "section section section"
+            "footer footer footer";
+
+        height: 100vh;
+    }
+}
