@@ -2,9 +2,33 @@
 
 @import"generales";
 
-@import"footer";
 
-/*practica animaciones*/
+
+/* extend*/
+.mod {
+    color: antiquewhite;
+}
+
+.formulario{
+    @extend .mod;
+
+}
+
+/*mixin*/
+@mixin medidas ($width,$heigth){
+    height: $heigth;
+    width: $width;
+}
+ .corazon{
+    @include medidas(500px,250px )
+    
+ }
+
+    
+
+
+
+
 .manos:hover {
     animation: manos 4s;
 }
@@ -28,20 +52,48 @@
 
 }
 
+nav {
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+
+}
+
+a {
+    color: aliceblue;
+    font-size: 25px;
+
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul .items {
+    border: 20px;
+
+}
 
 
 
-// h1 {
-//     font-style: normal;
-//     font-weight: bolder;
-//     font-family: 'Roboto', sans-serif;
-//     font-size: 40px;
-//     text-align: center;
-//     padding: 20px;
-//     margin: 10px 20px 10px 20px;
-//     color: rgb(227, 232, 236);
+body {
 
-// }
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 20px 10px 20px;
+    color: rgb(227, 232, 236);
+
+}
 
 h2 {
     font-style: normal;
@@ -88,7 +140,17 @@ p {
 
 
 
+footer {
 
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    padding: 10px;
+    margin: 10px, 20px, 0px, 20px;
+    text-align: center;
+    color: rgb(227, 232, 236);
+    ;
+}
 
 
 header {
@@ -131,11 +193,11 @@ nav {
             #2c5364);
 }
 
-.aside {
+.mirar {
     background-image: linear-gradient(#0f2027,
             #203a43,
             #2c5364);
-    grid-area: aside;
+    grid-area: mirar;
     text-align: center;
 }
 
@@ -155,11 +217,13 @@ footer {
         "experiencia"
         "manos"
         "necesidad"
-        "aside"
+        "mirar"
         "footer";
 }
 
-
+.border {
+    border: 1px solid white
+}
 
 
 
@@ -182,8 +246,8 @@ footer {
         grid-template-areas:
             "nav nav"
             "header header"
-            "necesidad aside"
-            "necesidad aside"
+            "necesidad mirar"
+            "necesidad mirar"
             "experiencia experiencia"
             "footer footer";
     }
@@ -198,7 +262,7 @@ footer {
             "nav nav nav"
             "header header header"
             "necesidad necesidad necesidad"
-            "aside aside aside"
+            "mirar mirar mirar"
             "experiencia experiencia experiencia"
             "footer footer footer";
     }
@@ -291,15 +355,16 @@ footer {
     color: #0f2027;
 }
 
-article {
-    color: #f1f5f7;
-}
+
 
 .formulario p {
     color: #f1f5f7;
     text-align: center;
 }
 
+.articulos{
+    color: whitesmoke;
+}
 
 main {
 
@@ -326,6 +391,9 @@ main {
 
 }
 
+.corazon{
+    text-align: right;
+}
 .arena p {
     color: #0f2027;
 }
@@ -348,7 +416,7 @@ main {
         "arena"
         "footer ";
 
-
+    gap: 5px;
     height: 100px;
 }
 
@@ -385,8 +453,8 @@ main {
         "donaciones"
         "donation"
         "footer";
-    gap: 5px;
-    height: 100vp;
+    gap: 2px;
+    height: 100vh;
 }
 
 @media(min-width:600px) {
@@ -402,7 +470,7 @@ main {
             "donation donation donation"
             "footer footer footer";
 
-        height: 100vh;
+        height: 100vp;
     }
 }
 
@@ -456,6 +524,7 @@ main {
             "section section"
             "footer footer";
 
+        height: 100vh;
     }
 }
 

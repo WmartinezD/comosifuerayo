@@ -4,12 +4,9 @@
   margin: 0;
 }
 
-header {
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr; */
-  padding: 20px;
-  text-align: center;
+body {
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 header nav .navbar-collapse {
@@ -22,7 +19,25 @@ header li a:hover {
   transition: all 2s;
 }
 
-/*practica animaciones*/
+header {
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr; */
+  padding: 20px;
+  text-align: center;
+}
+
+/* extend*/
+.mod, .formulario {
+  color: antiquewhite;
+}
+
+/*mixin*/
+.corazon {
+  height: 250px;
+  width: 500px;
+}
+
 .manos:hover {
   -webkit-animation: manos 4s;
           animation: manos 4s;
@@ -165,9 +180,9 @@ nav {
   background-image: linear-gradient(#0f2027, #203a43, #2c5364);
 }
 
-.aside {
+.mirar {
   background-image: linear-gradient(#0f2027, #203a43, #2c5364);
-  grid-area: aside;
+  grid-area: mirar;
   text-align: center;
 }
 
@@ -178,7 +193,7 @@ footer {
 
 .grilla {
   display: grid;
-  grid-template-areas: "header" "nav" "experiencia" "manos" "necesidad" "aside" "footer";
+  grid-template-areas: "header" "nav" "experiencia" "manos" "necesidad" "mirar" "footer";
 }
 
 .border {
@@ -198,13 +213,13 @@ footer {
 @media (min-width: 600px) {
   .grilla {
     display: grid;
-    grid-template-areas: "nav nav" "header header" "necesidad aside" "necesidad aside" "experiencia experiencia" "footer footer";
+    grid-template-areas: "nav nav" "header header" "necesidad mirar" "necesidad mirar" "experiencia experiencia" "footer footer";
   }
 }
 @media (min-width: 800px) {
   .grilla {
     display: grid;
-    grid-template-areas: "nav nav nav" "header header header" "necesidad necesidad necesidad" "aside aside aside" "experiencia experiencia experiencia" "footer footer footer";
+    grid-template-areas: "nav nav nav" "header header header" "necesidad necesidad necesidad" "mirar mirar mirar" "experiencia experiencia experiencia" "footer footer footer";
   }
 }
 .mision {
@@ -242,7 +257,6 @@ footer {
 }
 @media (min-width: 800px) {
   .nosotros {
-    background: red;
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "mision mision mision" "ayudar ayudar ayudar" "vos vos vos" "footer footer footer";
   }
@@ -258,13 +272,13 @@ footer {
   color: #0f2027;
 }
 
-article {
-  color: #f1f5f7;
-}
-
 .formulario p {
   color: #f1f5f7;
   text-align: center;
+}
+
+.articulos {
+  color: whitesmoke;
 }
 
 main {
@@ -284,6 +298,10 @@ main {
   color: #f1f5f7;
 }
 
+.corazon {
+  text-align: right;
+}
+
 .arena p {
   color: #0f2027;
 }
@@ -297,7 +315,7 @@ main {
 .contacto {
   display: grid;
   grid-template-areas: "header " "nav " "main" "redes" "arena" "footer ";
-  gap: 20px;
+  gap: 5px;
   height: 100px;
 }
 
@@ -321,16 +339,17 @@ main {
 .donar {
   display: grid;
   grid-template-areas: "header" "nav" "podes" "meta" "donaciones" "donation" "footer";
-  gap: 5px;
-  height: 100vp;
+  gap: 2px;
+  height: 100vh;
 }
 
-.donar {
-  display: grid;
-  grid-template-areas: "header header " "nav nav " "podes podes" "meta meta " "donaciones donaciones donaciones" "donation donation donation" "footer footer footer";
-  height: 100vp;
+@media (min-width: 600px) {
+  .donar {
+    display: grid;
+    grid-template-areas: "header header " "nav nav " "podes podes" "meta meta " "donaciones donaciones donaciones" "donation donation donation" "footer footer footer";
+    height: 100vp;
+  }
 }
-
 .section {
   text-align: center;
   grid-area: section;
@@ -363,13 +382,17 @@ main {
   height: 100vp;
 }
 
-.galeria {
-  display: grid;
-  grid-template-areas: "header header" "nav nav" "section section" "footer footer";
+@media (min-width: 600px) {
+  .galeria {
+    display: grid;
+    grid-template-areas: "header header" "nav nav" "section section" "footer footer";
+    height: 100vh;
+  }
 }
-
-.galeria {
-  display: grid;
-  grid-template-areas: "header header header" "nav nav nav" "section section section" "footer footer footer";
-  height: 100vh;
+@media (min-width: 800px) {
+  .galeria {
+    display: grid;
+    grid-template-areas: "header header header" "nav nav nav" "section section section" "footer footer footer";
+    height: 100vh;
+  }
 }/*# sourceMappingURL=style.css.map */

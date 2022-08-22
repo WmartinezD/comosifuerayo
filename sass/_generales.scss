@@ -9,13 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-header {
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr; */
-    padding: 20px;
-    text-align: center;
-}
+
 
 header nav .navbar-collapse {
     flex-grow: initial;
@@ -27,3 +21,13 @@ header li a:hover {
     transform: scale(1.01);
     transition: all 2s;
 }
+
+
+header {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
+    padding: 20px;
+    text-align: center;
+}
+
