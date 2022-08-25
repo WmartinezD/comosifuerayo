@@ -6,7 +6,7 @@
 
 /* extend*/
 .mod {
-    color: antiquewhite;
+    color:#0f2027;
 }
 
 .formulario{
@@ -23,9 +23,6 @@
     @include medidas(500px,250px )
     
  }
-
-    
-
 
 
 
@@ -51,7 +48,6 @@
 
 
 }
-
 nav {
     text-decoration: none;
     font-size: 25px;
@@ -60,7 +56,7 @@ nav {
 }
 
 a {
-    color: aliceblue;
+    color:whitesmoke;
     font-size: 25px;
 
 }
@@ -72,6 +68,7 @@ ul li {
 
 ul .items {
     border: 20px;
+    color: azure;
 
 }
 
@@ -115,26 +112,26 @@ p {
     line-height: 1.6;
     padding: 15px;
     margin: 10px 20px 10px 20px;
-    color: rgb(183, 198, 211);
+    color:#0f2027;
 }
 
 .parafo {
     font-size: 20px;
-    color: rgb(183, 198, 211);
+    color:#0f2027;
 }
 
 
 
 
 .section {
-    color: rgb(17, 165, 153);
+    color:#0f2027;
     border-top: 0px;
     border-left: 20px;
 
 }
 
 .vos {
-    color: rgb(17, 165, 153);
+    color:#0f2027;
 }
 
 
@@ -181,22 +178,16 @@ nav {
 
 .experiencia {
     grid-area: experiencia;
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+   
 }
 
 .necesidad {
     grid-area: necesidad;
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+    
 }
 
 .mirar {
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+    
     grid-area: mirar;
     text-align: center;
 }
@@ -269,34 +260,26 @@ footer {
 }
 
 .mision {
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+    
     text-align: center;
 
     grid-area: mision;
 }
 
 .somos {
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+   
     grid-area: somos;
 }
 
 .ayudar {
     text-align: center;
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+   
 
     grid-area: ayudar;
 }
 
 .vos {
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+    
     grid-area: vos;
 
 }
@@ -358,12 +341,12 @@ footer {
 
 
 .formulario p {
-    color: #f1f5f7;
+    color:#0f2027;
     text-align: center;
 }
 
 .articulos{
-    color: whitesmoke;
+    color:#0f2027;
 }
 
 main {
@@ -371,17 +354,13 @@ main {
     text-align: center;
     grid-area: main;
     border-radius: 1%;
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+   
 
 }
 
 .redes {
     padding: 10px;
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+   
     grid-area: redes;
 
 }
@@ -392,7 +371,7 @@ main {
 }
 
 .corazon{
-    text-align: right;
+    text-align: rigcent;
 }
 .arena p {
     color: #0f2027;
@@ -400,9 +379,7 @@ main {
 
 .arena {
     grid-area: arena;
-    background-color: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
+   
     text-align: left;
 }
 
@@ -423,24 +400,24 @@ main {
 
 
 .podes {
-    background-image: linear-gradient(#0f2027,
-            #203a43,
-            #2c5364);
-    ;
+  
     grid-area: podes;
 }
 
 
 .meta {
     grid-area: meta;
+    background-color: #f1f5f7;
 }
 
 .donaciones {
     grid-area: donaciones;
+    background-color: #f1f5f7;
 }
 
 .donation {
     grid-area: donation;
+    background-color: #f1f5f7;
 }
 
 .donar {
@@ -474,72 +451,22 @@ main {
     }
 }
 
-
-
-.section {
-    text-align: center;
-    grid-area: section;
-}
-
-.sub {
-    grid-area: sub;
-}
-
-.adicciones p {
+.text-center{
     color: #0f2027;
 }
-
-.depresion {
-    background-color: #203a43;
-
+.parrafog{
+    color:#0f2027;
+}
+.carousel-inner{
+    border: 20px;
 }
 
-.calle {
+h2{
     color: #0f2027;
 }
-
-.salud {
-    background-color: #203a43;
-
+.dia{
+    color: #0f2027;
 }
-
-.galeria {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "nav"
-        "section"
-        "footer";
-    gap: 5px;
-    height: 100vp;
-}
-
-@media(min-width:600px) {
-    .galeria {
-        display: grid;
-
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "section section"
-            "footer footer";
-
-        height: 100vh;
-    }
-}
-
-
-
-@media(min-width:800px) {
-    .galeria {
-        display: grid;
-
-        grid-template-areas:
-            "header header header"
-            "nav nav nav"
-            "section section section"
-            "footer footer footer";
-
-        height: 100vh;
-    }
+.cdpa{
+    color:#0f2027;
 }
