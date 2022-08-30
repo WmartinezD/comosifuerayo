@@ -101,7 +101,16 @@ h2 {
     border-top: 20px;
     color: rgb(227, 232, 236);
 }
-
+img{
+    max-width:100%;
+}
+.formulario{
+    .redes{
+        h2{
+            color:Red;
+        }
+    }
+}
 .manos {
     text-align: center;
 }
