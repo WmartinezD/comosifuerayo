@@ -107,7 +107,7 @@ img{
 .formulario{
     .redes{
         h2{
-            color:Red;
+            color: #0f2027;
         }
     }
 }
@@ -222,7 +222,8 @@ footer {
 }
 
 .border {
-    border: 1px solid white
+    border: 1px solid white;
+    
 }
 
 
@@ -276,7 +277,7 @@ footer {
 }
 
 .somos {
-   
+   text-align: justify;
     grid-area: somos;
 }
 
@@ -356,6 +357,7 @@ footer {
 
 .articulos{
     color:#0f2027;
+ 
 }
 
 main {
@@ -368,6 +370,7 @@ main {
 }
 
 .redes {
+    margin-bottom: 70px;
     padding: 10px;
    
     grid-area: redes;

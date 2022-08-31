@@ -13,12 +13,6 @@ header nav .navbar-collapse {
   flex-grow: initial;
 }
 
-
-
-.formulario .redes h2{
-  color:black;
-}
-
 /*practica transformaciones*/
 header li a:hover {
   transform: scale(1.01);
@@ -32,9 +26,7 @@ header {
   padding: 20px;
   text-align: center;
 }
-img{
-  max-width:100%;
-}
+
 /* extend*/
 .mod, .formulario {
   color: #0f2027;
@@ -42,7 +34,8 @@ img{
 
 /*mixin*/
 .corazon {
-  max-width: 500px;
+  height: 250px;
+  width: 500px;
 }
 
 .manos:hover {
@@ -120,6 +113,14 @@ h2 {
   color: rgb(227, 232, 236);
 }
 
+img {
+  max-width: 100%;
+}
+
+.formulario .redes h2 {
+  color: #0f2027;
+}
+
 .manos {
   text-align: center;
 }
@@ -170,6 +171,7 @@ header {
 }
 nav {
   grid-area: nav;
+  background-image: linear-gradient(#0f2027, #203a43, #2c5364);
   color: #f1f5f7;
 }
 
@@ -232,6 +234,7 @@ footer {
 }
 
 .somos {
+  text-align: justify;
   grid-area: somos;
 }
 
@@ -288,6 +291,7 @@ main {
 }
 
 .redes {
+  margin-bottom: 70px;
   padding: 10px;
   grid-area: redes;
 }
