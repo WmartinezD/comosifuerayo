@@ -396,6 +396,7 @@ main {
 }
 
 .contacto {
+    
     display: grid;
     grid-template-areas:
         "header "
@@ -405,12 +406,44 @@ main {
         "arena"
         "footer ";
 
-    gap: 5px;
-    height: 100px;
+    gap: 1px;
+    
 }
 
 
 
+@media(min-width:600px) {.contacto {
+    
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav "
+        "main main"
+        "redes redes"
+        "arena arena"
+        "footer footer";
+
+    gap: 1px;
+    
+}
+
+}
+
+@media(min-width:800px) {.contacto {
+    
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "redes redes redes"
+        "arena arena arena"
+        "footer footer footer";
+
+    gap: 1px;
+    
+}
+}
 .podes {
   
     grid-area: podes;
