@@ -34,8 +34,8 @@ header {
 
 /*mixin*/
 .corazon {
-  height: 250px;
-  width: 500px;
+  height: 75%;
+  width: 75%;
 }
 
 .manos:hover {
@@ -330,6 +330,7 @@ main {
   .contacto {
     display: grid;
     grid-template-areas: "header header header" "nav nav nav" "main main main" "redes redes redes" "arena arena arena" "footer footer footer";
+    height: 100vh;
     gap: 1px;
   }
 }

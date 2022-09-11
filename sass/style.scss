@@ -20,7 +20,7 @@
     width: $width;
 }
  .corazon{
-    @include medidas(500px,250px )
+    @include medidas(75%,75%)
     
  }
 
@@ -40,7 +40,6 @@
         transform: scale(0.5);
 
     }
-
     50% {
         transform: scale(0.8);
 
@@ -439,7 +438,7 @@ main {
         "redes redes redes"
         "arena arena arena"
         "footer footer footer";
-
+        height: 100vh;
     gap: 1px;
     
 }
@@ -515,3 +514,4 @@ h2{
 .cdpa{
     color:#0f2027;
 }
+
